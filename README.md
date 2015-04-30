@@ -2,6 +2,8 @@
 Generate Hashed Directory Structure with Mongoid.
 > Example:  55307ca19be8008e14d4a2c4 -> /ef/fe
 
+[![Build Status](https://secure.travis-ci.org/chuyik/mongoid-to-hashdir.png)](http://travis-ci.org/chuyik/mongoid-to-hashdir>)
+
 ## Installation
 ```bash
 npm install mongoid2hashdir
