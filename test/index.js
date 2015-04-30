@@ -1,7 +1,7 @@
 var fs   = require('fs')
 var path = require('path')
 
-var mongoid2Hashdir = require('..')
+var mongoid2hashdir = require('..')
 var mongoids = require('./data')
 
 testToHashArray()
@@ -9,7 +9,7 @@ testToHashUrl()
 testMkdirs()
 
 function testToHashArray () {
-  var results = mongoids.map(mongoid2Hashdir.toArray)
+  var results = mongoids.map(mongoid2hashdir.toArray)
 
   var pDirs = {}, sDirs = {}
 
@@ -33,7 +33,7 @@ function testToHashArray () {
 }
 
 function testToHashUrl () {
-  var results = mongoids.map(mongoid2Hashdir.toFilePath)
+  var results = mongoids.map(mongoid2hashdir.toFilePath)
 
   var paths = {}
 
@@ -51,7 +51,7 @@ function testToHashUrl () {
 }
 
 function testMkdirs () {
-  mongoid2Hashdir.mkdirs(mongoids[0], __dirname, function (err, path) {
+  mongoid2hashdir.mkdirs(mongoids[0], __dirname, function (err, path) {
     if (err) return done(err)
 
     var exists = fs.existsSync(path)

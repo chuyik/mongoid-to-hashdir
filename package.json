@@ -1,5 +1,5 @@
 {
-  "name": "mongoid2Hashdir",
+  "name": "mongoid2hashdir",
   "version": "0.0.1",
   "description": "Generate Hashed Directory Structure with Mongoid.",
   "homepage": "https://github.com/chuyik/mongoid2Hashdir",

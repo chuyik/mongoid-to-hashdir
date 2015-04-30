@@ -4,7 +4,7 @@ Generate Hashed Directory Structure with Mongoid.
 
 ## Installation
 ```bash
-npm install mongoid2Hashdir
+npm install mongoid2hashdir
 ```
 > Please make sure [Node.js](https://nodejs.org/) is installed.
 
@@ -29,7 +29,7 @@ __Arguments__
 __Examples__
 
 ```js
-mongoid2Hashdir.toArray('55307ca19be8008e14d4a2c4')  // ['ef', 'fe']
+mongoid2hashdir.toArray('55307ca19be8008e14d4a2c4')  // ['ef', 'fe']
 ```
 
 
@@ -44,7 +44,7 @@ __Arguments__
 __Examples__
 
 ```js
-mongoid2Hashdir.toFilePath('55307ca19be8008e14d4a2c4')  // '/ef/fe'
+mongoid2hashdir.toFilePath('55307ca19be8008e14d4a2c4')  // '/ef/fe'
 ```
 
 
@@ -61,7 +61,7 @@ __Arguments__
 __Examples__
 
 ```js
-mongoid2Hashdir.mkdirs(
+mongoid2hashdir.mkdirs(
     '55307ca19be8008e14d4a2c4',
     '/any/directory',
     function (err, fullPath) {
