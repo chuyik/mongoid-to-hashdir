@@ -1,0 +1,20 @@
+{
+  "name": "mongoid2Hashdir",
+  "version": "0.0.1",
+  "description": "Generate Hashed Directory Structure with Mongoid.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "generate",
+    "hash",
+    "directory",
+    "mongoid"
+  ],
+  "author": "Edward Chu <crazyzyt@gmail.com> (https://github.com/chuyik)",
+  "license": "MIT"
+}
