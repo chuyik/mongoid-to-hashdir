@@ -2,6 +2,8 @@
   "name": "mongoid2Hashdir",
   "version": "0.0.1",
   "description": "Generate Hashed Directory Structure with Mongoid.",
+  "homepage": "https://github.com/chuyik/mongoid2Hashdir",
+  "author": "Edward Chu <crazyzyt@gmail.com> (https://github.com/chuyik)",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -15,6 +17,9 @@
     "directory",
     "mongoid"
   ],
-  "author": "Edward Chu <crazyzyt@gmail.com> (https://github.com/chuyik)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chuyik/mongoid2Hashdir.git"
+  },
   "license": "MIT"
 }
