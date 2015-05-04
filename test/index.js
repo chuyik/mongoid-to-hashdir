@@ -2,7 +2,7 @@ var fs   = require('fs')
 var path = require('path')
 
 var mongoid2hashdir = require('..')
-var mongoids = require('./data')
+var mongoids = require('./_data')
 
 testToHashArray()
 testToHashUrl()
