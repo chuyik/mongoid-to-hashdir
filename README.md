@@ -64,10 +64,12 @@ __Examples__
 
 ```js
 mongoid2hashdir.mkdirs(
-    '55307ca19be8008e14d4a2c4',
-    '/any/directory',
-    function (err, fullPath) {
-      console.log('fullPath: ', fullPath)
-    })
+  '55307ca19be8008e14d4a2c4',
+  '/any/directory',
+  function (err, fullPath) {
+    console.log('fullPath: ', fullPath)
+    // '/any/directory/ef/fe/55307ca19be8008e14d4a2c4' should be created or existed
+  }
+)
 ```
 

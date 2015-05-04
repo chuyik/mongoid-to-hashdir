@@ -1,5 +1,6 @@
-var fs   = require('fs')
 var path = require('path')
+
+var mkdirp = require('./lib/mkdirp')
 
 function toArray (id) {
   return _main(id)
@@ -14,28 +15,15 @@ function mkdirs (id, basePath, cb) {
   if (!basePath) throw 'Missing argument: basePath is required.'
   cb = cb || emptyFn
 
-  var arr = toArray(id)
+  var hashPath = toFilePath(id)
 
-  fs.exists(basePath, function (exists) {
-    if (!exists) return cb('basePath is not existed.')
-
-    var p = path.join(basePath, arr[0])
-
-    // first layer
-    fs.mkdir(p, function (err) {
-      // ignore if exists
-      if (err && err.errno !== 47) return cb(err)
-        p = path.join(p, arr[1])
-
-        // second layer
-        fs.mkdir(p, function (err) {
-          // ignore if exists
-          if (err && err.errno !== 47) return cb(err)
-          cb (null, p)
-        })
-    })
-  })
+  mkdirp(
+    basePath,                 // base path: /any/directory
+    path.join(hashPath, id),  //  sub path: /ef/fe/55307ca19be8008e14d4a2c4
+    cb
+  )
 }
+
 
 exports.toArray = toArray
 exports.toFilePath = toFilePath
